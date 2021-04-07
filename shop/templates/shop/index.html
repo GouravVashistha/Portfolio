@@ -1,0 +1,344 @@
+{% comment %} {% extends 'shop/basic.html' %} {% endcomment %} {% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+{% load static %}
+
+<body>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+        <img src="{% static 'img/hamberger.svg' %}">
+</button>
+
+        <div class="mobile-nav ">
+            <button class="times">
+            <img src="{% static 'img/times.svg' %}">
+        </button>
+            <ul>
+                <li><a href="/shop/"> Home </a></li>
+                <li><a href="/shop/about"> About </a></li>
+                <li><a href="#services"> Services </a></li>
+                <li><a href="#works"> Works </a></li>
+                <li><a href="/blog"> Blog </a></li>
+                <li><a href="#Download"> Download cv </a></li>
+            </ul>
+        </div>
+
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex item-center justify-between ">
+                    <div class="left flex item-center ">
+                        <div class="branding">
+                            <img src="{% static 'img/gTech.png' %}" height="50px" width="70px" style="border-radius: 10px;">
+                        </div>
+                        <div class="social">
+                            <a href="/shop/"> Home </a>
+                            <a href="/shop/about"> About </a>
+                            <a href="#services"> Services </a>
+                            <a href="#works"> Works </a>
+                            <a href="/blog"> Blog </a>
+                            <a href="#Download"> Download cv </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a href="/shop/contact">
+                            <button class="btn btn-primary">Contact</button>
+                        </a>
+                    </div>
+
+                </nav>
+
+                <div class="hero flex item-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="{% static 'img/life.png' %}">
+
+                    </div>
+                    <div class="right flex-1">
+                        <h6>Gourav Vashistha </h6>
+                        <h1> I'm a Creative <span>Designer</span></h1>
+                        <p> "hey my name is Gaurav vashistha. I am Creative web Designer and programer. I graduated with my degree in Enginering two months ago. I chose that field of study because I’ve always been interested in coding, and a couple of family
+                            members told me it leads to great career options, too.”</p>
+                        <div>
+                            <a href="{% static 'img/GouravCV.pdf' %}">
+                                <button class="btn btn-secondary">DOWNLOAD CV</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        {% comment %} =========================================================================================================================================== {% endcomment %}
+        <section class="about">
+            <div class="container flex item-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="{% static 'img/about-us.png' %}">
+                </div>
+                <div class="flex-1 right">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello i'm Gourav Vashistha</h3>
+                    <p>I am Creative web Designer and programer. I graduated with my degree in Enginering two months ago. I chose that field of study because I’ve always been interested in coding, and a couple of family members told me it leads to great
+                        career options, too.</p>
+                    <h4>Contact: 9518443458, 9729746268</h4>
+                    <h4>Email: gvshistha4@gmail.com</h4>
+
+
+                    <div class="social">
+
+                        <a href="https://www.facebook.com/campaign/landing.php?campaign_id=297550880665906&placement=Model%201-16&keyword=jxWrI7w99lu4SP0uzD77KcNLjl%2FcD6tqx07%2FL8JM%2By%2FKTP8ryk76KMhF6XGcGqpsxzqufZ8eoHGRI5h7mB2%2FbtwfvX3JTvIszkn2L8tN%2BSrN%2FlEAAAD6fM8e&extra_2=IN&creative=bookmark"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-f.png" /></a>
+                        <a href="https://www.linkedin.com/in/gaurav-vashistha-79aa01184/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" /></a>
+                        <a href="https://www.instagram.com/?hl=en"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% comment %} +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ {% endcomment %}
+
+        <section id="services" class="services">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Services</h1>
+                <p>We provide high standar clean Website and Desktop Software for your business solutions</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="{% static 'img/grap.png' %}" height="120px" style="border-radius: 60px;">
+                        <h2>Graphic Design</h2>
+                        <p>Graphic design is the craft of creating visual content to communicate messages. Applying visual hierarchy and page layout techniques, </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/web.svg' %}" height="120px" style="border-radius: 60px;">
+                        <h2>Web Devlipment</h2>
+                        <p>Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/andro.png ' %}" height="120px" style="border-radius: 60px;">
+                        <h2>Android App Development</h2>
+                        <p>An Android Developer is a Software Developer who specializes in designing applications for the Android marketplace. The Android marketplace is the direct competitor to Apple's app store. </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/ui.png' %}" height="120px" style="border-radius: 60px;">
+                        <h2>User Interface </h2>
+                        <p>User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style. Designers aim to create interfaces which users find easy to use and pleasurable. </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/ai.svg' %}" height="120px" style="border-radius: 60px;">
+                        <h2>Artificial intelligence</h2>
+                        <p>Artificial intelligence is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals, which involves consciousness and emotionality. </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/img4.png' %}" height="120px" style="border-radius: 60px;">
+                        <h2>Software Development</h2>
+                        <p>Software engineering is a detailed study of engineering to the design, development and maintenance of software. Software engineering was introduced to address the issues of low-quality software projects. </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section id="Download" class="freelancer">
+            <h1>I Am Available For Freelancer.</h1>
+            <p>We provide high standard clean Website and Software for your Busines solution</p>
+            <a href="{% static 'img/GouravCV.pdf' %}">
+                <button class="btn btn-primary">Download CV</button>
+            </a>
+        </section>
+
+
+        <section id="works" class="work">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Works</h1>
+                <p>We provide high standard clean Website and Software for your Busines solution</p>
+
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Web Devlopment</a>
+                        </div>
+                        <img src="{% static 'img/ph-1.png' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Web Devlopment</a>
+                        </div>
+                        <img src="{% static 'img/ph-2.png' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Web Devlopment</a>
+                        </div>
+                        <img src="{% static 'img/ph-3.png' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Web Devlopment</a>
+                        </div>
+                        <img src="{% static 'img/article-ph-2.png' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Web Devlopment</a>
+                        </div>
+                        <img src="{% static 'img/article-ph-1.png' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Web Devlopment</a>
+                        </div>
+                        <img src="{% static 'img/article-ph-3.png' %}">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Blog</h1>
+                <p>We provide high standard clean Website and Software for your Busines solution</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="{% static 'img/article-ph-1.png' %}">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Python Developer</h1>
+                            </a>
+                            <span>May 12, 2019</span>
+                            <p>A Python Web Developer is responsible for writing server-side web application logic. Python web developers usually develop back-end components, connect the application with the other (often third-party) web services, and support
+                                the front-end developers by integrating their work with the Python application</p>
+                            <a href="#">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="{% static 'img/article-ph-2.png' %}">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Web Development</h1>
+                            </a>
+                            <span>May 12, 2019</span>
+                            <p>A Python Web Developer is responsible for writing server-side web application logic. Python web developers usually develop back-end components, connect the application with the other (often third-party) web services, and support
+                                the front-end developers by integrating their work with the Python application</p>
+                            <a href="#">Read More</a>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="{% static 'img/article-ph-3.png' %}">
+                        </div>
+                        <div class="card-content">
+                            <a href="#">
+                                <h1>Data Analytics</h1>
+                            </a>
+                            <span>May 12, 2019</span>
+                            <p>A Python Web Developer is responsible for writing server-side web application logic. Python web developers usually develop back-end components, connect the application with the other (often third-party) web services, and support
+                                the front-end developers by integrating their work with the Python application</p>
+                            <a href="#">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="contact">
+            <div class="container">
+                <h1 class="section-heading"> Contact <span>US</span></h1>
+                <p>We provide high standard clean Website and Software for your Busines solution</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="{% static 'img/call.jpg' %}">
+                        <h1> Call Us On</h1>
+                        <h6>+9518443458</h6>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/mail.jpg' %}">
+                        <h1> Email US At</h1>
+                        <h6>gvshistha4@gmail.com</h6>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'img/visit.png' %}">
+                        <h1> Visit Office</h1>
+                        <h6>Echelon Institute Of Technology</h6>
+                    </div>
+                </div>
+
+                <form action="/shop/" method="post">{% csrf_token %}
+                    <div class="input-wrap">
+                        <input type="text" name='name' placeholder="Your Name *">
+                        <input type="text" name='email' placeholder="Your Email (abcd@gmail.com)">
+                    </div>
+                    <div class="input-wrap-2">
+                        <input type="text" name='phone' placeholder="Mobile No.">
+                        <textarea name="desc" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+            <img class="footer-logo" src="{% static 'img/logo-2.svg' %}">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/campaign/landing.php?campaign_id=297550880665906&placement=Model%201-16&keyword=jxWrI7w99lu4SP0uzD77KcNLjl%2FcD6tqx07%2FL8JM%2By%2FKTP8ryk76KMhF6XGcGqpsxzqufZ8eoHGRI5h7mB2%2FbtwfvX3JTvIszkn2L8tN%2BSrN%2FlEAAAD6fM8e&extra_2=IN&creative=bookmark"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-f.png" /></a>
+                <a href="https://www.linkedin.com/in/gaurav-vashistha-79aa01184/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" /></a>
+                <a href="https://www.instagram.com/?hl=en"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" /></a>
+            </div>
+
+            <div class="copyright">
+                copyright 2021 © Gaurav Vashistha. All Right Reserved
+            </div>
+        </footer>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+{% endblock %}
